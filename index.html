@@ -3,33 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=h, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Myfirstweatherapp</title>
   </head>
+  
   <body>
+    <div class="weather-app">
     <header>
-      <form>
-      <input type="search" placeholder="Enter a city" required/>
-      <input type="submit" value="search"/>
+      <form class="search-form">
+      <input type="search" placeholder="Enter a city" required class="search-form-input"/>
+      <input type="submit" value="search" class="search-form-button"/>
       </form>
     </header>
     <main>
-    <div>
-    <h1>Harare</h1>
-    <p>
+    <div class="weather-app-data">
+     <div>
+     <h1 class="weather-app-city">Harare</h1>
+     <p class="weather-app-details">
      Thursday 22:43, overcast clouds </br>
-Humidity: 97%, Wind: 5.14km/h 
+     Humidity: <strong>97%</strong>, Wind: <strong>5.14km/h</strong> 
     </p>
     </div>
-    <div>
-      🌦️ 17°C
+    <div class="weather-app-temperature-container">
+      <div class="weather-app-icon">🌦️</div> <div class="weather-app-temperature">17</div>
+      <div class="weather-app-temperature-unit">°C</div>
     </div>
+  </div>
     </main>
-    <footer></footer>
-  </body>
+    <footer>
   Coded by
   <a href="https://github.com/hazelvimbai">Hazel Vimbai Makura</a>
   code hosted on
   <a href="https://github.com/hazelvimbai/myfirstweatherapp">Github</a>
   website hosted on
   <a href="https://hazelfirstweatherapp.netlify.app/">Netlify.</a>
+  </footer>
+  </div>
+  </body>
 </html>
